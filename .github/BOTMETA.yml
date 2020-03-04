@@ -20434,6 +20434,8 @@ files:
     migrated_to: community.windows
   test/integration/targets/win_xml/meta/main.yml:
     migrated_to: community.windows
+  lib/ansible/module_utils/net_tools/netbox/netbox_utils.py:
+    migrated_to: netbox.netbox
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
