@@ -14,6 +14,7 @@ __metaclass__ = type
 
 import re
 import ast
+import json
 from copy import deepcopy
 
 from ansible.module_utils.network.common import utils
@@ -133,6 +134,7 @@ class VlansFacts(object):
           and adds a 'run_cfg' key containing raw cli from the device.
         """
         # device output may be string, convert to list
+        structured = json.loads(structured))
         structured = ast.literal_eval(str(structured))
 
         vlanbrief = []
